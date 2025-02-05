@@ -1,0 +1,178 @@
+/* .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 900px;
+  border: 1px solid black;
+}
+.logo {
+  width: 110px;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.body {
+}
+
+.search {
+  padding: 10px;
+}
+
+.restaurant-card {
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+  background-color: #f0f0f0;
+}
+
+.restaurant-card:hover {
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.restaurant-image {
+  width: 100%;
+}
+
+.restaurant-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+} */
+
+
+
+
+
+
+
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Ensures proper spacing */
+    align-items: center;
+    padding: 15px 5%; /* Adds spacing and ensures responsiveness */
+    border-bottom: 2px solid #ddd; /* Softer, modern border */
+    background-color: bisque; /* Clean background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo */
+.logo {
+    width: 120px; /* Slightly larger for better visibility */
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Smooth hover effect */
+}
+
+/* Navigation */
+.nav-items > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+}
+
+.nav-items > ul > li {
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+    cursor: pointer;
+}
+
+.nav-items > ul > li:hover {
+    color: #ff6347; /* Tomato color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Body */
+.body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Search Bar */
+.search {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search:focus {
+    border-color: #ff6347;
+    box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.3);
+}
+
+/* Restaurant Card */
+.restaurant-card {
+    padding: 10px;
+    width: 230px;
+    height: 330px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+/* Restaurant Image */
+.restaurant-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Restaurant Container */
+.restaurant-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-items > ul {
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .restaurant-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
