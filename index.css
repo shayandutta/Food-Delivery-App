@@ -159,6 +159,16 @@
     margin-top: 20px;
 }
 
+.footer{
+  display: flex;
+    justify-content: space-between; /* Ensures proper spacing */
+    align-items: center;
+    padding: 15px 5%; /* Adds spacing and ensures responsiveness */
+    border-bottom: 2px solid #ddd; /* Softer, modern border */
+    background-color: bisque; /* Clean background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
