@@ -17,11 +17,11 @@ const RestaurantCard = (props) => {
         />
         <h4>{name}</h4>
         <h5>{cuisines.join(", ")}</h5>
-        <h5>{avgRating} ⭐</h5>
-        <h5>{deliveryTime} mins</h5>
+        <h5>{avgRating} ⭐</h5> 
+        <h5>{deliveryTime} mins</h5> 
       </div>
     );
-  };
-  
+
+}
 
   export default RestaurantCard;
