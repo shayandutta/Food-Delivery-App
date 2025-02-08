@@ -3,8 +3,8 @@ import { CDN_URL } from "../utils/constants";
 const RestaurantCard = (props) => {
     const { resData } = props;
   
-    const { cloudinaryImageId, name, cuisines, avgRating, deliveryTime } =
-      resData?.data; // Destructuring the data object
+    const { cloudinaryImageId, name, cuisines, avgRating, deliveryTime } = //object destructuring
+      resData?.data; // optional chaining so that we dont repeat the steps again and again
   
     return (
       <div className="restaurant-card">
